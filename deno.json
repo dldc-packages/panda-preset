@@ -1,0 +1,16 @@
+{
+  "name": "@dldc/panda-preset-dldc",
+  "version": "0.0.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "bump": "deno run -A jsr:@mys/bump@1",
+    "deps:outdated": "deno outdated",
+    "deps:update": "deno outdated --update --latest --interactive",
+    "check": "deno fmt --check . && deno lint . && deno check **/*.ts",
+    "test:coverage": "deno test -A --coverage=coverage && deno coverage coverage --html"
+  },
+  "imports": {
+    "@pandacss/dev": "npm:@pandacss/dev@^0.54.0",
+    "@pandacss/preset-panda": "npm:@pandacss/preset-panda@^0.54.0"
+  }
+}
