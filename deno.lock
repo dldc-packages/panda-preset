@@ -1,6 +1,7 @@
 {
   "version": "5",
   "specifiers": {
+    "npm:@pandacss/dev@*": "0.54.0",
     "npm:@pandacss/dev@0.54": "0.54.0",
     "npm:@pandacss/preset-panda@0.54": "0.54.0"
   },

@@ -1,8 +1,16 @@
 {
   "name": "@dldc/panda-preset",
   "version": "1.0.1",
-  "exports": "./mod.ts",
+  "exports": {
+    ".": "./preset/mod.ts",
+    "./css": "./styled-system/css.mjs",
+    "./tokens": "./styled-system/tokens.mjs",
+    "./types": "./styled-system/types.mjs",
+    "./patterns": "./styled-system/patterns.mjs",
+    "./jsx": "./styled-system/jsx.mjs"
+  },
   "tasks": {
+    "codegen": "deno run -A @pandacss/dev codegen --clean",
     "bump": "deno run -A jsr:@mys/bump@1",
     "deps:outdated": "deno outdated",
     "deps:update": "deno outdated --update --latest --interactive",
@@ -12,5 +20,6 @@
   "imports": {
     "@pandacss/dev": "npm:@pandacss/dev@^0.54.0",
     "@pandacss/preset-panda": "npm:@pandacss/preset-panda@^0.54.0"
-  }
+  },
+  "nodeModulesDir": "manual"
 }

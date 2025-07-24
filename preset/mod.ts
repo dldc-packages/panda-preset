@@ -1,11 +1,11 @@
 import { definePreset, type Preset } from "@pandacss/dev";
 import { preset as pandaPreset } from "@pandacss/preset-panda";
-import { globalCss } from "./src/globalCss.ts";
-import { globalVars } from "./src/globalVars.ts";
-import { patterns } from "./src/patterns.ts";
-import { textStyles } from "./src/textStyles.ts";
-import { tokens } from "./src/tokens.ts";
-import { utilities } from "./src/utilities.ts";
+import { globalCss } from "./globalCss.ts";
+import { globalVars } from "./globalVars.ts";
+import { patterns } from "./patterns.ts";
+import { textStyles } from "./textStyles.ts";
+import { tokens } from "./tokens.ts";
+import { utilities } from "./utilities.ts";
 
 const dldcPreset: Preset = definePreset({
   name: "dldc-preset",
