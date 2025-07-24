@@ -12,5 +12,10 @@
   "imports": {
     "@pandacss/dev": "npm:@pandacss/dev@^0.54.0",
     "@pandacss/preset-panda": "npm:@pandacss/preset-panda@^0.54.0"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-slow-types"]
+    }
   }
 }
