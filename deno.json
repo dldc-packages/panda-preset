@@ -1,6 +1,6 @@
 {
   "name": "@dldc/panda-preset-dldc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "exports": "./mod.ts",
   "tasks": {
     "bump": "deno run -A jsr:@mys/bump@1",
@@ -15,7 +15,9 @@
   },
   "lint": {
     "rules": {
-      "exclude": ["no-slow-types"]
+      "exclude": [
+        "no-slow-types"
+      ]
     }
   }
 }
