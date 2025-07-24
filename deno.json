@@ -1,5 +1,5 @@
 {
-  "name": "@dldc/panda-preset-dldc",
+  "name": "@dldc/panda-preset",
   "version": "1.0.0",
   "exports": "./mod.ts",
   "tasks": {
