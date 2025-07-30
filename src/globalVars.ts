@@ -4,7 +4,6 @@ export const designHeightVar = "--design-height";
 export const designRoundedVar = "--design-rounded";
 export const contentSizeVar = "--content-size";
 export const spacingGapVar = "--spacing-gap";
-export const heightPowerVar = "--height-power";
 
 export const globalVars = {
   [designHeightVar]: {
@@ -26,11 +25,6 @@ export const globalVars = {
     initialValue: "var(--sizes-1x)",
     inherits: false,
     syntax: "<length>",
-  },
-  [heightPowerVar]: {
-    initialValue: "0.68",
-    inherits: true,
-    syntax: "<number>",
   },
 
   // From ariakit
