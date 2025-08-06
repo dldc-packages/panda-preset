@@ -11,8 +11,6 @@ export const utilities = {
   prose: defineUtility({
     className: "prose",
     values: { type: "boolean" },
-    group: "Typography",
-    layer: "custom",
     transform: (_, { token }) => {
       return mergeStyles(
         PROSE_BASE,
@@ -24,8 +22,6 @@ export const utilities = {
   proseColor: defineUtility({
     className: "prose_color",
     values: [...PROSE_COLOR_NAMES],
-    group: "Typography",
-    layer: "custom",
     transform: (color, { token }) => {
       return (PROSE_COLORS(token) as Record<string, any>)[color] || {};
     },
@@ -33,8 +29,6 @@ export const utilities = {
   proseInvert: defineUtility({
     className: "prose_invert",
     values: { type: "boolean" },
-    group: "Typography",
-    layer: "custom",
     transform: () => PROSE_INVERT,
   }),
 };
