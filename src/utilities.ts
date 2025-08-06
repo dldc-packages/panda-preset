@@ -7,6 +7,7 @@ import {
   PROSE_SIZE_DYNAMIC,
 } from "./prose.ts";
 
+// TODO: Fix utility order
 export const utilities = {
   prose: defineUtility({
     className: "prose",
