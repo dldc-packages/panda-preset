@@ -3,6 +3,7 @@ import { preset as pandaPreset } from "@pandacss/preset-panda";
 import { globalCss } from "./src/globalCss.ts";
 import { globalVars } from "./src/globalVars.ts";
 import { patterns } from "./src/patterns.ts";
+import { recipes } from "./src/recipes.ts";
 import { textStyles } from "./src/textStyles.ts";
 import { tokens } from "./src/tokens.ts";
 import { utilities } from "./src/utilities.ts";
@@ -16,6 +17,7 @@ const dldcPreset: Preset = definePreset({
       ...pandaPreset.theme,
       tokens,
       textStyles,
+      recipes,
     },
   },
   utilities: {
