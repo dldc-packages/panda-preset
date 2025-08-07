@@ -10,8 +10,8 @@
     "test:coverage": "deno test -A --coverage=coverage && deno coverage coverage --html"
   },
   "imports": {
-    "@pandacss/dev": "npm:@pandacss/dev@^0.54.0",
-    "@pandacss/preset-panda": "npm:@pandacss/preset-panda@^0.54.0"
+    "@pandacss/dev": "npm:@pandacss/dev@^1.0.1",
+    "@pandacss/preset-panda": "npm:@pandacss/preset-panda@^1.0.1"
   },
   "lint": {
     "rules": {
