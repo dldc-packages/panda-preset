@@ -5,16 +5,9 @@ export function serializeSize(size: number): string {
   if (remainder === 0) {
     return baseStr;
   }
-  if (remainder === 1 || remainder === -1) {
-    return `${baseStr}_x`;
-  }
-  if (remainder === 2 || remainder === -2) {
-    return `${baseStr}x`;
-  }
-  if (remainder === 3 || remainder === -3) {
-    return `${baseStr}xx`;
-  }
-  throw new Error(`Invalid size: ${size}`);
+  const remainderStr = (remainder / 4).toString(2).replace(/^-?0\.?/, "")
+    .replace(/0/g, "_").replace(/1/g, "x");
+  return baseStr + remainderStr;
 }
 
 export function range(

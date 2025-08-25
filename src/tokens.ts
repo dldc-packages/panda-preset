@@ -3,7 +3,9 @@ import { preset as pandaPreset } from "@pandacss/preset-panda";
 import { buildSizeTokenMap, range, serializeSize } from "./utils.ts";
 
 const SIZES_VALUES = [
-  ...range(0, 16 - 1, 1),
+  0,
+  0.5,
+  ...range(1, 16 - 1, 1),
   ...range(16, 40 - 1, 2),
   ...range(40, 80, 4),
 ];
