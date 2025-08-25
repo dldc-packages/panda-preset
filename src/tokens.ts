@@ -42,6 +42,7 @@ const shadows = {
 
 const borderWidths = {
   "0": { value: "0rem" },
+  "0__x": { value: "0.03125rem" }, // 0.5px
   "0_x": { value: "0.0625rem" }, // 1px
   "0x": { value: "0.125rem" }, // 2px
   "0xx": { value: "0.1875rem" }, // 3px
