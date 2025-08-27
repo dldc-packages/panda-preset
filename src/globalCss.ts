@@ -3,7 +3,7 @@ import { defineGlobalStyles } from "@pandacss/dev";
 export const globalCss = defineGlobalStyles({
   html: {
     h: "full",
-    bg: "zinc.950",
+    bg: "neutral.950",
     colorScheme: "dark",
     colorPalette: "neutral",
   },

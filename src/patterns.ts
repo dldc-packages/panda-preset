@@ -17,49 +17,16 @@ const ellipsis = definePattern({
 });
 
 const paper = definePattern({
-  description: "Paper component",
+  description: "Paper component, set a light white border and rounded corners",
   jsxElement: "div",
-  properties: {
-    level: {
-      type: "enum",
-      value: ["card", "select", "modal"],
-    },
-  },
   transform(props) {
-    const { level = "modal", ...rest } = props;
-    switch (level) {
-      case "card":
-        return {
-          overflow: "hidden",
-          background: "neutral.900",
-          borderColor: "neutral.825",
-          borderRadius: "2",
-          borderWidth: "0_x",
-          ...rest,
-        };
-      case "select":
-        return {
-          overflow: "hidden",
-          background: "neutral.900",
-          borderColor: "neutral.800",
-          borderRadius: "2",
-          borderWidth: "0_x",
-          boxShadow: "md",
-          ...rest,
-        };
-      case "modal":
-        return {
-          overflow: "hidden",
-          background: "neutral.950",
-          borderColor: "neutral.900",
-          borderRadius: "2",
-          borderWidth: "0_x",
-          boxShadow: "xl",
-          ...rest,
-        };
-      default:
-        return rest;
-    }
+    return {
+      overflow: "hidden",
+      borderRadius: "2",
+      borderWidth: "0__x",
+      borderColor: "white/10",
+      ...props,
+    };
   },
 });
 
@@ -67,12 +34,13 @@ const backdrop = definePattern({
   description: "Backdrop component",
   jsxElement: "div",
   properties: {},
-  transform() {
+  transform(props) {
     return {
       position: "fixed",
       inset: "0",
       backgroundColor: "black/30",
       backdropFilter: "blur(4px)",
+      ...props,
     };
   },
 });
